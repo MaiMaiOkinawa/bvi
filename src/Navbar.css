@@ -1,0 +1,31 @@
+.nav {
+  /* max-width: min(97.125em - var(--size-02)); */
+
+  color: var(--clr-basic-900);
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: var(--size-02);
+  padding: 0 1rem;
+
+  & ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: var(--size-04);
+
+    & a {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0.25rem;
+    }
+
+    & li:hover {
+      background-color: var(--clr-primary-200);
+    }
+    & li.active {
+      border-bottom: 0.125rem solid var(--clr-basic-900);
+    }
+  }
+}
