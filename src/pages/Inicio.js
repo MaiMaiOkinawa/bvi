@@ -4,6 +4,7 @@ import Services from '../components/Services';
 import Trainings from '../components/Trainings';
 import Classes from '../components/Classes';
 import Workshops from '../components/Workshops';
+import Footer from '../components/Footer';
 
 export default function Inicio() {
   return (
@@ -13,6 +14,7 @@ export default function Inicio() {
       <Trainings />
       <Classes />
       <Workshops />
+      <Footer />
     </>
   );
 }

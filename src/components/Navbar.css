@@ -3,7 +3,6 @@ header {
   width: 100vw;
   position: fixed;
   top: 0;
-  z-index: 1000;
 
   & .nav {
     max-width: min(97.125em - var(--size-02));
@@ -12,7 +11,7 @@ header {
     justify-content: space-between;
     align-items: stretch;
     gap: var(--size-02);
-    padding: 0rem 2rem;
+    padding: 0 var(--size-02);
     margin-inline: auto;
 
     & img {
@@ -49,7 +48,7 @@ header {
         height: 100%;
         display: flex;
         align-items: center;
-        padding: 2rem 1rem;
+        padding: var(--size-02) var(--size-01);
         color: var(--clr-basic-100);
       }
     }
