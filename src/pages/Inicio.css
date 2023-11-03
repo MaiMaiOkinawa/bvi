@@ -1,6 +1,5 @@
 .hero {
-  margin: 0;
-  padding: 0;
+  margin-top: var(--size-05);
   background-image: url('../images/banner.jpg');
   background-size: cover;
   background-position: center;
@@ -13,7 +12,36 @@
   }
 }
 
+.service-container {
+  max-width: unset;
+}
+
+.training-container,
+.workshop-container {
+  max-width: unset;
+  background-color: var(--clr-primary-400);
+  background-image: url('../images/zigzag.svg');
+  background-size: contain;
+  background-position: top;
+  background-repeat: repeat-x;
+}
+
+.class-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: unset;
+  padding-inline: 0;
+}
+.workshop-container {
+  background-color: var(--clr-accent-violet);
+  background-image: url('../images/diagonal.svg');
+}
+
 .services {
+  margin-inline: auto;
+  max-width: min(97.125em - var(--size-02));
+  padding-inline: 2rem;
+  margin-block: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--size-01);
@@ -46,10 +74,96 @@
   }
 }
 
-.trainings {
-  background-color: coral;
+.trainings,
+.workshops {
+  margin-inline: auto;
+  max-width: min(97.125em - var(--size-02));
+  padding-inline: 2rem;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--size-01);
-  padding: var(--size-02) 0;
+  padding: var(--size-05) 0 0;
+  color: var(--clr-basic-100);
+
+  & .player-image {
+    position: relative;
+    background-image: url('../images/player_1.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  & .card {
+    padding-block: var(--size-02) var(--size-05);
+    padding-inline: 0 var(--size-03);
+
+    & p {
+      padding-top: var(--size-02);
+      padding-bottom: var(--size-03);
+    }
+  }
+}
+
+.classes-wrapper {
+  /* margin-inline: auto; */
+
+  & .card {
+    max-width: min(48.5625em - var(--size-02));
+    padding: var(--size-05);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    & h1 {
+      padding-bottom: 1rem;
+    }
+    & p {
+      padding-top: var(--size-02);
+      padding-bottom: var(--size-05);
+    }
+
+    & .btn {
+      background-color: var(--clr-primary-400);
+      color: var(--clr-basic-100);
+    }
+  }
+}
+
+& .left {
+  margin-left: auto;
+}
+
+& .right {
+}
+& .wrapper-left {
+  background-color: var(--clr-accent-pink);
+  background-image: url('../images/wave.svg');
+  background-repeat: no-repeat;
+}
+
+& .wrapper-right {
+  background-color: var(--clr-accent-blue);
+  background-image: url('../images/dots.svg');
+}
+
+.workshops {
+  color: var(--clr-primary-400);
+  padding: var(--size-05) 0 0;
+
+  gap: 3rem;
+
+  & .btn {
+    background-color: var(--clr-primary-400);
+    color: var(--clr-basic-100);
+  }
+
+  & .card {
+    padding-block: var(--size-02) var(--size-05);
+    padding-inline: 2rem;
+  }
+
+  & .player-image {
+    background-image: url('../images/player_2.png');
+  }
 }

@@ -21,6 +21,7 @@
   --clr-accent-blue: #50cbea;
   --clr-accent-green: #52ffb8;
   --clr-accent-blue: #50cbea;
+  --clr-accent-violet: #b2abf2;
 
   /* FONT FAMILY */
   --ff-primary: 'IBM Plex Sans';
@@ -40,6 +41,7 @@
   --fs-01: 1rem; /* Footer Yellow part */
   --fs-0125: 1.25rem; /* Default */
   --fs-0150: 1.5rem;
+  --fs-0165: 1.65rem;
   --fs-0175: 1.75rem;
   --fs-02: 2rem; /* h2 Sub-title */
   --fs-0250: 2.5rem;
@@ -79,9 +81,10 @@
   box-sizing: border-box;
 }
 
-/* html {
-  font-size: 62.5%;
-} */
+html {
+  /* font-size: 62.5%; */
+  scroll-behavior: smooth;
+}
 
 /* Remove default margin */
 body,
@@ -157,20 +160,20 @@ section {
 
 h1 {
   font-family: var(--ff-secondary-heading);
-  font-size: var(--fs-0350);
-  line-height: var(--size-04);
+  font-size: var(--fs-03);
+  line-height: var(--size-03);
 }
 
 h2 {
   font-family: var(--ff-primary-heading);
-  font-size: var(--fs-02);
+  font-size: var(--fs-0165);
   font-weight: 600;
   line-height: normal;
 }
 
 p {
   font-family: var(--ff-body);
-  font-size: var(--fs-0125);
+  font-size: 1rem;
 }
 
 .btn {
