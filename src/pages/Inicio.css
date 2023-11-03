@@ -1,0 +1,55 @@
+.hero {
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: var(--size-03);
+  padding-bottom: 15rem;
+
+  & p {
+    margin-bottom: var(--size-05);
+  }
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--size-01);
+  padding: var(--size-02) 0;
+
+  & .card {
+    padding: 2rem 2.5rem;
+
+    & h1 {
+      padding-bottom: 1rem;
+    }
+    & p {
+      padding-top: var(--size-02);
+      padding-bottom: var(--size-05);
+    }
+
+    & .btn {
+      background-color: var(--clr-primary-400);
+      color: var(--clr-basic-100);
+    }
+  }
+
+  & .court-image {
+    background-image: url('../images/court.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    margin: 3rem;
+  }
+}
+
+.trainings {
+  background-color: coral;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--size-01);
+  padding: var(--size-02) 0;
+}

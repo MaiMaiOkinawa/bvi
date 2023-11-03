@@ -1,26 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@600&display=swap');
 :root {
   /* <-- primary-color --> */
   --clr-primary-100: hsl(0, 0%, 100%); /* <-- Link Default */
-  --clr-primary-200: hsla(208, 29%, 95%, 1); /* <-- Link Hover */
-  --clr-primary-300: hsla(210, 31%, 89%, 1); /* <-- Link Pressed */
-  --clr-primary-400: hsla(43, 98%, 60%, 1); /* <-- Btn Default */
-  --clr-primary-500: hsla(43, 91%, 53%, 1); /* <-- Btn Primary-Hover*/
-  --clr-primary-600: hsla(43, 98%, 46%, 1); /* <-- Btn Primary-Pressed */
+  --clr-primary-200: #eff3f6; /* <-- Link Hover */
+  --clr-primary-300: #dae3ec; /* <-- Link Pressed */
+  --clr-primary-400: #162b6a; /* <-- Primary */
+  --clr-primary-500: #c8af8a; /* <-- Secondary gold */
+  --clr-primary-600: #b39d7c; /* <-- Btn Hover*/
+  --clr-primary-700: #a28f72; /* <-- Btn active */
 
   /* <-- basic-color --> */
   --clr-basic-100: hsla(0, 0%, 100%, 1);
+  --clr-basic-800: #12293d;
   --clr-basic-900: hsla(208, 54%, 15%, 1);
 
   /* <-- accent-color --> */
-  --clr-accent-white: hsla(205, 12%, 96%, 1);
-  --clr-accent-pink: hsla(358, 100%, 74%, 1);
-  --clr-accent-yellow: hsla(43, 100%, 74%, 1);
-  --clr-accent-blue: hsla(220, 96%, 77%, 1);
+  --clr-accent-gray-dark: #cdcad3;
+  --clr-accent-gray-light: #eae8e9;
+  --clr-accent-pink: #ec4d60;
+  --clr-accent-blue: #50cbea;
+  --clr-accent-green: #52ffb8;
+  --clr-accent-blue: #50cbea;
 
   /* FONT FAMILY */
   --ff-primary: 'IBM Plex Sans';
-  --ff-secondary: 'Krona One';
+  --ff-secondary: 'Space Grotesk';
 
   --ff-body: var(--ff-primary);
   --ff-primary-heading: var(--ff-secondary);
@@ -37,13 +41,15 @@
   --fs-0125: 1.25rem; /* Default */
   --fs-0150: 1.5rem;
   --fs-0175: 1.75rem;
-  --fs-02: 2rem; /* h3 Sub-title */
+  --fs-02: 2rem; /* h2 Sub-title */
   --fs-0250: 2.5rem;
-  --fs-03: 3rem; /* h2 */
+  --fs-03: 3rem;
+  --fs-0350: 3.5rem;
+  --fs-0375: 3.75rem; /* h1 */
   --fs-0425: 4.25rem;
   --fs-0575: 5.75rem;
+  --fs-0625: 6.25rem; /*  Hero Claim*/
   --fs-07: 7rem;
-  --fs-0875: 8.75rem; /*  Hero Claim*/
 
   /* OTHER SIZE */
   --size-mid: 0.5rem;
@@ -110,8 +116,8 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: 'IBM Plex Sans', 'Krona One', sans-serif;
-  color: var(--clr-basic-900);
+  font-family: 'IBM Plex Sans', 'Space Grotesk', sans-serif;
+  color: var(--clr-basic-800);
 }
 
 /* A elements that don't have a class get default styles */
@@ -138,8 +144,40 @@ picture {
 
 section {
   margin-inline: auto;
-  max-width: min(75em - 2rem);
-  padding-block: 1rem;
+  max-width: min(97.125em - var(--size-02));
+  padding-inline: 2rem;
+}
+
+.claim {
+  font-family: var(--ff-claim);
+  font-size: var(--fs-0625);
+  color: var(--clr-basic-100);
+  line-height: 6rem;
+}
+
+h1 {
+  font-family: var(--ff-secondary-heading);
+  font-size: var(--fs-0350);
+  line-height: var(--size-04);
+}
+
+h2 {
+  font-family: var(--ff-primary-heading);
+  font-size: var(--fs-02);
+  font-weight: 600;
+  line-height: normal;
+}
+
+p {
+  font-family: var(--ff-body);
+  font-size: var(--fs-0125);
+}
+
+.btn {
+  background-color: var(--clr-primary-100);
+  padding: 1.2rem 2.5rem;
+  border-radius: 2.5rem;
+  font-weight: 600;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
