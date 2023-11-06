@@ -53,6 +53,11 @@
   --fs-0625: 6.25rem; /*  Hero Claim*/
   --fs-07: 7rem;
 
+  --fs-body: var(--fs-01);
+  --fs-primary-heading: var(--fs-03);
+  --fs-secondary-heading: var(--fs-0165);
+  --fs-claim: var(--fs-0625);
+
   /* OTHER SIZE */
   --size-mid: 0.5rem;
   --size-01: 1rem;
@@ -121,6 +126,7 @@ body {
   line-height: 1.5;
   font-family: 'IBM Plex Sans', 'Space Grotesk', sans-serif;
   color: var(--clr-basic-800);
+  font-size: var(--fs-body);
 }
 
 /* A elements that don't have a class get default styles */
@@ -148,38 +154,38 @@ picture {
 section {
   margin-inline: auto;
   max-width: min(97.125em - var(--size-02));
-  padding-inline: 2rem;
+  padding-inline: var(--size-02);
 }
 
 .claim {
   font-family: var(--ff-claim);
-  font-size: var(--fs-0625);
+  font-size: var(--fs-claim);
   color: var(--clr-basic-100);
-  line-height: 6rem;
+  line-height: var(--size-06);
 }
 
 h1 {
   font-family: var(--ff-secondary-heading);
-  font-size: var(--fs-03);
+  font-size: var(--fs-primary-heading);
   line-height: var(--size-03);
 }
 
 h2 {
   font-family: var(--ff-primary-heading);
-  font-size: var(--fs-0165);
+  font-size: var(--fs-secondary-heading);
   font-weight: 600;
   line-height: normal;
 }
 
 p {
   font-family: var(--ff-body);
-  font-size: 1rem;
+  font-size: var(--fs-body);
 }
 
 .btn {
   background-color: var(--clr-primary-100);
-  padding: 1.2rem 2.5rem;
-  border-radius: 2.5rem;
+  padding: 1.2rem var(--size-0250);
+  border-radius: var(--size-0250);
   font-weight: 600;
 }
 
@@ -196,5 +202,13 @@ p {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+@media screen and (max-width: 53em) {
+  :root {
+    --fs-primary-heading: var(--fs-0250);
+    --fs-secondary-heading: var(--fs-0150);
+    --fs-claim: 3.625rem;
   }
 }

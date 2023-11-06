@@ -32,6 +32,18 @@
   max-width: unset;
   padding-inline: 0;
 }
+
+/* .container {
+  container-type: size;
+  container-name: class-container;
+}
+
+@container class-container (max-with:1005px ) {
+  .class-container {
+    display: flex;
+    background-color: coral;
+  }
+} */
 .workshop-container {
   background-color: var(--clr-accent-violet);
   background-image: url('../images/diagonal.svg');
@@ -107,7 +119,7 @@
 
 .classes-wrapper {
   & .card {
-    max-width: min(48.5625em - var(--size-02));
+    /* max-width: min(48.5625em - var(--size-02)); */
     padding: var(--size-05);
     background-size: contain;
     background-position: top;

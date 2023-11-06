@@ -9,7 +9,8 @@ export default function Classes() {
           <div className="card left">
             <CardOne
               title="Entrenamientos personales"
-              text="Aprovecha al máximo tus clases personales de vóley playa! Con la atención personalizada de nuestros instructores expertos, mejorarás rápidamente tus habilidades. Realizamos entrenamientos desde 1 hasta 4 jugadores, para todos los niveles: iniciación, intermedio, avanzado y pro. No pierdas la oportunidad de prepararte de una forma profesional en el vóley playa. Transfórmate en un jugador de vóley playa de primera clase con nuestras clases personales. No esperes más, empieza tu transformación hoy mismo!"
+              text="Aprovecha al máximo tus clases personales de vóley playa! Con la atención personalizada de nuestros instructores expertos, mejorarás rápidamente tus habilidades. Realizamos entrenamientos desde 1 hasta 4 jugadores, para todos los niveles: iniciación, intermedio, avanzado y pro. No pierdas la oportunidad de prepararte de una forma profesional en el vóley playa. 
+              Transfórmate en un jugador de vóley playa de primera clase con nuestras clases personales. No esperes más, empieza tu transformación hoy mismo!"
             />
             <Link className="btn" to="/tienda">
               Ver entrenos personales
